@@ -1,1 +1,1 @@
-# theresamayisacunt.github.io
+# theresamayisacunt.com
