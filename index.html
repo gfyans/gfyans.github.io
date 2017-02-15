@@ -76,7 +76,8 @@
 		  
 		  <script>
 			$(document).ready(function () {
-				$(".hide-tweets").on("click", function () {
+				$(".hide-tweets").on("click", function (e) {
+					e.preventDefault();
 					var display = $("twitterwidget").is(":visible");
 					
 					if ( display === true ) {
