@@ -20,6 +20,28 @@
 			twitterwidget {
 				margin: 0 auto;
 			}
+			
+			.hide-tweets {
+				position: fixed;
+				right: 0;
+				bottom: 0;
+				background-color: #4CAF50;
+				color: white;
+				padding: 5px 10px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;				
+				border-radius: 5px 0 0 0;
+				-webkit-transition: padding 0.1s;
+				transition: padding 0.1s;
+				font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				font-size: 11px;
+			}
+			
+			.hide-tweets:hover {
+				padding: 10px 20px;
+			}
 		</style>
 	</head>
 	<body>
@@ -30,7 +52,20 @@
 		
 		<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Here&#39;s that photo of <a href="https://twitter.com/theresa_may">@theresa_may</a> and <a href="https://twitter.com/hashtag/trump?src=hash">#trump</a> again. Save it with the one of <a href="https://twitter.com/BorisJohnson">@BorisJohnson</a> with the <a href="https://twitter.com/hashtag/brexit?src=hash">#brexit</a> lie bus. They&#39;ll come in useful. <a href="https://t.co/rFOkFQuMBT">pic.twitter.com/rFOkFQuMBT</a></p>&mdash; Tom Cornfoot (@tomcornfoot) <a href="https://twitter.com/tomcornfoot/status/825457185417228295">January 28, 2017</a></blockquote>
 	
+		<a href="#" class="hide-tweets">Hide Tweets</a>
+	
 		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+		<script
+		  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+		  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+		  crossorigin="anonymous"></script>
+		  
+		  <script>
+			$(document).ready(function () {
+				$(".hide-tweets").on("click", function () {
+					$("twitterwidget").toggle();
+				});
+			});
+		  </script>
 	</body>
 </html>
