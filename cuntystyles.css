@@ -1,44 +1,75 @@
 html, body {
-			margin: 0;
-			padding: 0;
-			background: #000;
-		}
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow: auto;
+}
 		
-			.the-horror {
-			  position: fixed;
-			  top: 0;
-			  left: 0;
-			  width: 100%;
-			  height: 100%;
-			  background: url(cunt.jpg) no-repeat center center fixed; 
-			  -webkit-background-size: cover;
-			  -moz-background-size: cover;
-			  -o-background-size: cover;
-			  background-size: cover;
-			}
-			
-			twitterwidget {
-				margin: 0 auto;
-			}
-			
-			.hide-tweets {
-				position: fixed;
-				right: 0;
-				bottom: 0;
-				background-color: #4CAF50;
-				color: white;
-				padding: 5px 10px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 16px;				
-				border-radius: 5px 0 0 0;
-				-webkit-transition: padding 0.1s;
-				transition: padding 0.1s;
-				font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-				font-size: 11px;
-			}
-			
-			.hide-tweets:hover {
-				padding: 10px 20px;
-			}
+.the-horror {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(cunt.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.text-container {
+    position: absolute;
+    align-items: center;
+    height:auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+    background-color: rgba(255, 215, 0, 0.8);
+}
+
+.text {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+}
+
+.text p {
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px #4c4c4c;
+}
+
+.text p:first-child {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.hide {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px 0 0 0;
+    -webkit-transition: padding 0.1s;
+    transition: padding 0.1s;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 11px;
+}
+
+.hide:hover {
+    padding: 10px 20px;
+}
