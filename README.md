@@ -1,1 +1,1 @@
-# theresamayisacunt.com
+FUCK THE TORIES
